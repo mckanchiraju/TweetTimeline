@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem "bourbon"
+
 gem 'webpacker', github: 'rails/webpacker'
 
 gem 'ny_times', path: "./lib/ny_times"
