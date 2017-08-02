@@ -1,6 +1,7 @@
 require "ny_times/version"
 require 'net/https'
 
+
 module NyTimes
 	URI_BASE = "https://api.nytimes.com/svc/search/"
 
@@ -41,7 +42,7 @@ module NyTimes
 	end
 end
 
-#req = NyTimes::Request.new do |config|
+#{req = NyTimes::Request.new do |config|
 #	config.api_key = "8aaf2a4f97a74f7980ecbc88f3d06795"
 #	config.params = {
 #		q: "trump",
