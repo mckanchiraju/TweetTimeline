@@ -13,11 +13,11 @@ module.exports = merge(sharedConfig, {
 
   devServer: {
     clientLogLevel: 'none',
-    https: true,//settings.dev_server.https,
-    host: "tweet-timeline-howmuchcomputer.c9users.io",//settings.dev_server.host,
-    port: 8081,//settings.dev_server.port,
+    https: settings.dev_server.https,
+    host: settings.dev_server.host,
+    port: settings.dev_server.port,
     contentBase: output.path,
-    publicPath: "https://tweet-timeline-howmuchcomputer.c9users.io",//output.publicPath,
+    publicPath: output.publicPath,
     compress: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
     historyApiFallback: true,

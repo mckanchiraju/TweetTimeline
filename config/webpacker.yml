@@ -33,7 +33,7 @@ development:
   dev_server:
     host: localhost
     port: 8080
-    https: true # Must load assets over https for c9
+    https: false
 
 test:
   <<: *default
