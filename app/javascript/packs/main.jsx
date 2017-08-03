@@ -8,16 +8,18 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import Timeline from './components/timeline';
 import reducers from './reducers';
+import ReduxThunk from 'redux-thunk';
 
-
-const store = createStore(reducers, {});
+const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}><Timeline /></Provider>,
     document.body.appendChild(document.createElement('div')),
   )
+
 });
+
 
 
 /*
