@@ -38,8 +38,11 @@ gem 'jbuilder', '~> 2.5'
 gem "bourbon"
 
 gem 'webpacker', github: 'rails/webpacker'
+gem 'pry'
 
 gem 'ny_times', path: "./lib/ny_times"
+gem 'twitter_api', path:"./lib/twitter_api"
+gem 'market_api', path: "./lib/market_api"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

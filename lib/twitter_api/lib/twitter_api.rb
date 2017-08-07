@@ -23,16 +23,16 @@ module TwitterApi
       @config ||= Config.new
     end
 
-    def get_tweets
-        @client.search(config.params)
+    def get_tweets(data)
+        @client.search(data)
     end
   end
 end
 
 
 #req = TwitterApi::Request.new do |config|
-#
-  #config.consumer_key = "2fdleAE5QvieWJo4LOQ7hIoiP"
+
+ #config.consumer_key = "2fdleAE5QvieWJo4LOQ7hIoiP"
   #config.consumer_secret = "HI2WNYRN0qGexIGB4jby1r7MmSA49dTYUYtv2hd25y4vHcHUqa"
   #config.access_token = "3660171796-tlMApqfuMzvQ9eYWproWoSEJY4ftlgiOp0nFMtl"
   #config.access_token_secret = "eXYGo8wfP6S559XFO15BgUmfglyjck4wf44iCqaOXOOkr"
@@ -40,6 +40,7 @@ end
   #config.params = "from:realDonaldTrump china"
 #end
 
-#req.get_tweets.each do |f|
- # puts f.text
+#req.get_tweets("from:realDonaldTrump china").each do |f|
+  #puts f.text
+  #puts f.created_at
 #end
